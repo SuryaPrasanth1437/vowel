@@ -1,9 +1,9 @@
 vowel=['a','e','i','o','u']
 char=input()
-if type(char)!=str:
-    print("invalid")
-else:
+if char.isalpha():
     if char in vowel:
         print("Vowel")
     else:
         print("Consonant")
+else:
+    print("invalid")
